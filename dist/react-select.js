@@ -1223,7 +1223,10 @@ var Select = _react2['default'].createClass({
 			var addNewOption = true;
 			//NOTE: only add the "Add" option if none of the options are an exact match
 			filteredOptions.map(function (option) {
-				if (option.label.toLowerCase() === filterValue || option.value.toLowerCase() === filterValue) {
+
+				console.log(option);
+
+				if (option.label.toLowerCase() === filterValue || option.value === filterValue) {
 					addNewOption = false;
 				}
 			});
